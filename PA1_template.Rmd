@@ -48,7 +48,7 @@ Make a histogram of the total number of steps taken each day.
 ```{r}
 daily<-aggregate(rawdata[,1]~rawdata[,2], FUN=sum)
 daily<-cbind(daily,ymd(daily[,1]))
-plot(daily[,3],daily[,2],xlab="Day",ylab="Total Steps")
+plot(daily[,3],daily[,2],xlab="Day",ylab="Total Steps",type="h")
 ```  
 
 **Question 1b** 
@@ -122,13 +122,13 @@ sum(is.na(cleandata[,1]))                       # confirm no more NA's
 ```
 
 **Question 3d**  
-Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps? 
+Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?  
 
 make the histogram as for Question 1a above
 ```{r}
 daily<-aggregate(cleandata[,1]~cleandata[,2], FUN=sum)
 daily<-cbind(daily,ymd(daily[,1]))
-plot(daily[,3],daily[,2],xlab="Day",ylab="Total Steps")
+plot(daily[,3],daily[,2],xlab="Day",ylab="Total Steps",type="h")
 ```  
 
 Calculate and report the mean and median total number of steps taken per day as was done for Question 1b above.  Also show the summary data for the raw and clean data sets.     
