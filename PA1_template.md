@@ -5,7 +5,7 @@ output: html_document
 
 ##Define the questions  
 Note that the questions to be addressed were given in the [assignment] [1] and are included in the analysis sections below.  
-[1]: [https://class.coursera.org/repdata-007/human_grading/view/courses/972596/assessments/3/submissions] "Assignment"  
+[1]: [https://class.coursera.org/repdata-007/human_grading/view/courses/972596/assessments/3/submissions] "Assignment"   
 
 
 ##Obtain the data  
